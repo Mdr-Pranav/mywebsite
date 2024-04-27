@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+  <head>
+    <meta charset='UTF-8'>
+    <title>LoneWolf</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAzJJREFUWEftl1uoT3kUxz9fBqWMvLnTMJERzYt0eNCow0zUPJhpNC5Tbi/KTJ2IktLJNZHQhFxqpGamppjMKbk9oHkaRWFymYhkFCUOwtLSOmafbZ/z37/h/+8o623vvdZ3fff6rdtPdDBRB+PDu0nIzD4D6oGxwEdAb+AWcAU4DTRJOvE2ot1uhMxsNLAVGFfC2RFgoaQLJXTbVGmTkJnNBHYA3RIcNANfS/o9waaVaiEhM5sG/JLRfAr8CBwDLgJX4+iGA36c84HOGf16SYf/D6nXCJnZIOAs0CMALwNfSPq7LQdmNhL4A+gfOv8CIyTdSSVVROg34MsA8miMLwNsZk7mFDAgbLdLWvBGhMxsDPBngDwBhkn6pyxoFMFf8LKdGDBUkldiaWkVITPbBCwK602SfiiNFIpmth/4Jh4XS1qfgpEn5CU7LADqJHmPSRIz+wr4OYyOSpqYApAndA/oGQAfSrqfAua6ZjY4qtAfr0nyIikteUKeN13C+gNJz0oj/Xdk3rcexWOzpO4pGHlCN4E+AdBHko+HJDGzvsCNMDoraVQKQJ7QSaAuAD6X1JQCFkc2FTgQdvskzUjByBNaDqwMgJ2S5qWABaGfgG/DbomkdSkYeUI+Cs4HwPPott4cS0n0oTOh/Bj4WNL1UsahVNSp9wKz4vsln/SSblcCNbOB0an7hW6jJI94khQR8qQ8B/QKJB+kkyvMsk+BQ7EnuZkXwxBJD5PYRIt/zcbMpgAHMx982m8DjmemvTfQEcAEYG4O61fgO0kP3gqhSM7pwB6gawKo9x/PId8s7wI+ijZL8oZbSiptjJ8AWyIKlQCPAl6VHk3PvZYG68e2VlJL9baLU2rJj516Uman9jzrBLgz36V3S3q10JmZL3P51WO5pMZKf1WKUCWQ/PeoOF87slukq62oFKmqEIocXAUsLfiZdZKWtPWT1STk2H5JmFPg3ItljiRvvq2kaoQiSp5nu4DZBaT8/VxJvlm+kqoSavFiZhuB7wtI+ZUpe7up3VXazHyVbciQWi1pWU2PrKD61gCe0A2SNhQldk2OLOvYzCZI8hFUKDUnVKmnvSf0zkXoBUbP/CV1fHarAAAAAElFTkSuQmCC"/>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="pranav.css"/>
+  </head>
+  <style>
+
+    @keyframes example {
+      25%  { left:0px; top:0px;}
+      50%  { left:0px; top:25px;}
+      75%  { left:0px; top:25px;}
+      100% { left:0px; top:0px;}
+      0%   { left: 0px; top:0px;}
+
+}
+
+@keyframes anim1{
+      0%  {transform:translateY(-150%);opacity: 0;}
+      40%  {transform:translateY(-150%);opacity: 0;}
+      100% {transform:translateX(0%);opacity:1;}
+
+}
+
+.slide1{
+position:relative;
+animation-name: anim1;
+animation-duration:1s;
+animation-timing-function:ease-in-out;
+}
+
+@keyframes anim12{
+      0%  {transform:translateY(-150%);opacity: 0;}
+      50%  {transform:translateY(-150%);opacity: 0;}
+      65%  {transform:translateY(-150%);opacity: 0;}
+      100% {transform:translateX(0%);opacity:1;}
+
+}
+
+.slide2{
+position:relative;
+animation-name: anim12;
+animation-duration:1s;
+animation-timing-function:ease-in-out;
+}@keyframes anim1233{
+      0%  {transform:translateY(-150%);opacity: 0;}
+      50%  {transform:translateY(-150%);opacity: 0;}
+      70%  {transform:translateY(-150%);opacity: 0;}
+      75%  {transform:translateY(-150%);opacity: 0;}
+      100% {transform:translateX(0%);opacity:1;}
+
+}
+
+.slide3{
+position:relative;
+animation-name: anim1233;
+animation-duration:1s;
+animation-timing-function:ease-in-out;
+}
+@keyframes anim123{
+      0%  {transform:translatex(-350%);opacity: 0;}
+      100% {transform:translateX(0%);opacity:1;}
+
+}
+
+.slideright1{
+position:relative;
+animation-name: anim123;
+animation-duration:1s;
+animation-timing-function:ease-in-out;
+}
+
+
+
+@keyframes pop1{
+      0%  {transform:scale(1);opacity: 0;}
+      25%  {transform:scale(1);opacity: 0;}
+      30%  {transform:scale(1);opacity: 0;}
+      50%  {transform:scale(1);opacity: 0;}
+      75%  {transform:scale(1.5);opacity: 1;}
+      100% {transform:scale(1);opacity:1;}
+
+}
+@keyframes pop12{
+      0%  {opacity: 0;}
+      50%  {opacity: 0;}
+      75%  {opacity: 0;}
+      100% {opacity:1;}
+
+}
+
+.logo{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.logo:hover{
+  transform:scale(1.3);
+}
+.headpop{
+position:relative;
+animation-name: pop1;
+animation-duration:1s;
+animation-timing-function:ease-in-out;
+}
+   /* div{
+      position: relative;
+      animation-name:example;
+      animation-duration:1s;
+      animation-iteration-count:initial;
+      animation-direction:initial;
+      padding: 10px;
+    }*/
+
+    form {
+      background-color: #ffffff;
+      width: 300px;
+      height: 44px;
+      border-radius: 5px;
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+    }
+
+    input {
+      all: unset;
+      font: 16px system-ui;
+      color: #000000;
+      height: 100%;
+      width: 100%;
+      padding: 6px 10px;
+    }
+
+    ::placeholder {
+      color: hsl(0, 0%, 0%);
+      opacity: 0.7; 
+    }
+
+    .search{
+      background-color: #000000;
+    }
+
+    /* .search:hover{ */
+      /* background-color: #000000; */
+    /* } */
+
+    svg {
+      color: #cdcab5;
+      fill: currentColor;
+      width: 35px;
+      height: 35px;
+      padding-left: 15px;
+      padding-top: 10px;
+    }
+
+    /* button {
+       all: unset; 
+      cursor: pointer;
+      width: 100px;
+      height: 50px;
+    } */
+
+    #button1 {border-radius: 15px;
+      cursor: pointer;
+      width: 100px;
+      height: 50px;}
+    /* #button2 {
+      background: red;
+      left:2.5px;
+      border-radius: 15px;} */
+
+    .utube{
+       border-color: rgb(255, 0, 0);
+       background-color: rgb(255, 255, 255);
+       color: rgb(0, 0, 0);
+       transition: all 0.5s;
+      }
+
+      .utube:hover{
+          background-color: rgb(253, 0, 0);
+          color: rgb(255, 255, 255);
+          transform: scale(1.1);
+      }
+
+      .spot{
+       border-color: rgb(58, 181, 1);
+       background-color: rgb(255, 255, 255);
+       color: rgb(0, 0, 0);
+       transition: all 0.5s;
+      }
+
+      .spot:hover{
+          background-color: rgb(58, 181, 1);
+          color: rgb(0, 0, 0);
+          transform: scale(1.1);
+      }
+
+      .mail{
+       border-color: rgb(255, 185, 8);
+       background-color: rgb(255, 255, 255);
+       color: rgb(0, 0, 0);
+       transition: all 0.5s;
+      }
+
+      .mail:hover{
+          background-color: rgb(255, 185, 8);
+          color: rgb(0, 0, 0);
+          transform: scale(1.1);
+      }
+
+       /*Socials animation*/
+@keyframes animations3 {
+    0% {bottom:0px}
+    25% {bottom:5px}
+    50% {bottom:10px}
+    75% {bottom:5px}
+    100% {bottom:0px}
+  }
+
+.sclani {
+    position: relative;
+    animation-name: animations3 ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.social{
+    bottom:0px;
+    /* border: 2px solid #ff56e8; */
+    /* border-radius: 5px; */
+    position:relative;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s; 
+   }
+   
+.social:hover{
+    transform:scale(1.4);
+   }
+   
+.scl{
+     position:absolute;
+     /* height: 80px;*/
+     width: 170px; 
+     /* background: red;  */
+     display: flex;
+     justify-content: space-around;
+     align-content: center;
+     bottom:20px;
+     left:20px;
+   }
+
+   @keyframes animations2 {
+    0% {bottom:75px}
+    25% {bottom:80px}
+    50% {bottom:85px}
+    75% {bottom:80px}
+    100% {bottom:75px}
+  }
+
+.d2 {
+    position: relative;
+    animation-name: animations2 ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes content1 {
+  0% {
+     opacity: 0;
+  }
+  30%{opacity:0;}
+  100% {
+    opacity:0.5;
+  }
+}
+.contentanim{
+  position:relative;
+  animation-name:content1;
+  animation-duration:0.8s;
+  animation-timing-function: ease-in-out;
+ }
+ </style>
+
+ 
+  <!-- linear-gradient(90deg,rgb(166, 1, 166) ,rgb(241, 102, 102),rgb(166, 1, 166)  -->
+  <!-- <body style="background-image:linear-gradient(90deg,#02AABD,#00CDAC);"> -->
+    
+<body style="overflow: hidden;background-image:linear-gradient(90deg,#02AABD,#00CDAC);" >
+
+  <!--Top Content(profile)-->  
+  <div class="stick">
+  <!--<p height="10"><marquee><strong><i>--!Welcome to the webspot!--</i></strong></marquee><br></p>-->  
+      <p>
+       &nbsp;
+      <a href="/pranav.html"><img id="img1"src="/pfp2.png" alt="Error loading Image" class=" wweeb button3 pop1"></a></p>
+
+      <!--button on top-->
+      <p style="width:725px;display:flex;justify-content: space-around;position:fixed;top:10px;left:70px">
+       <a href="https://www.pesuacademy.com/Academy/" target="_blank"><button class=" btn inianim pes button2"><b>PES&nbsp;Academy</b></button></a>
+       <a href="https://web.whatsapp.com/" target="_blank"><button class=" btn wweb button2 stick2"><b>Whatsapp&nbsp;Web</b></button></a>
+       <a href="https://youtube.com" target="_blank"><button class=" btn utube button2 stick3"><b>Youtube</b></button></a> 
+       <a href="https://web.snapchat.com" target="_blank"><button class=" btn snap button2 stick4"><b>Snapchat</b></button></a> 
+       <a href="https://twitter.com" target="_blank"><button class=" btn elon button2 stick5"><b>Twitter</b></button></a>
+       <a href="https://open.spotify.com/" target="_blank"><button class=" btn spot button2 stick6"><b>Spotify</b></button></a>
+       <hr size="3" color ="black"> 
+      </p>
+  </div>
+
+    <center><h1 class="headpop logo"style="position:absolute;top:100px;left:540px;font-size:50px"><strong><i>LoneWolf</i></strong></h1></center><br><br>
+    <h1 id="live-time" style="position:absolute;bottom:20px;right:75px;"></h1>
+   
+    <p style="display:flex;justify-content:center;padding-top: 150px;"><center><form role="search" id="form">
+      <input class='contentanim' style="opacity:0.5;" type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content" autocomplete="off">
+      <button id="button2"  class="search slideright1">
+        <svg viewBox="0 0 1024 1024" style="display:flex;justify-content:center;align-items:center;width:50px"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+      </button>
+    </form></center></p>
+    <br><br>
+    
+    <div style="display:flex;justify-content:center;"><a href="https://www.youtube.com/"><button id="button1" class="utube slide1"><b>Youtube</b></button></a>&nbsp;&nbsp;
+    <a href="https://open.spotify.com/"><button id="button1"  class="spot slide2"><b>Spotify</button></b></a>&nbsp;&nbsp;
+    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AXo7B7Ubu5YVBI1s0Y7h0OireqvStttB2hhb7ftQU47nxw0XSXitnZ36tJVCv0JfJQoNa3kaNtpsEg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-485684465%3A1691684015682621">
+        <button id="button1"  class="mail slide3"><b>Gmail</button></b>
+        </a></p></li></div>
+         
+    <!--Socials-->
+    <div class="d2"style="position:absolute;"><b >Creator<i class='bx bxs-paint'style=color:black;></i>:</b></div>
+    <div class="scl sclani" style="position:absolute">
+        <a href="https://www.instagram.com/nikhi_k_c//" target="_blank"><i class='bx bxl-instagram social bx-md' style="color:black"></i></a>
+        <a href="https://www.linkedin.com/in/pranav-mudar-122b47273/" target="_blank"><i class='bx bxl-linkedin-square social bx-md' style="color:black"></i></a>
+        <a href="https://twitter.com/Pranav0530" target="_blank"><i class='bx bxl-twitter social bx-md' style="color:black"></i></a>
+    </div>
+    
+    <!--Return button-->
+    <div style='position:absolute;top:20px;right:20px;'>
+       <a href="/pranav.html" ><i class='bx bx-arrow-back social bx-lg' style='color:#000000' ></i></a>
+    </div>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=';
+      // const site = 'pagedart.com';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+
+    function updateTime() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    // const seconds = String(now.getSeconds()).padStart(2, '0');
+ 
+    const time = `${hours}:${minutes}`;
+ 
+    document.getElementById('live-time').innerHTML = time;
+ 
+    setTimeout(updateTime, 1000);
+}
+    	
+    window.onload = updateTime;
+    
+    </script>
+  </body>
+</html>
