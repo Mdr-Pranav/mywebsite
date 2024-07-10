@@ -8,10 +8,6 @@
     /* repeat : no-repeat; 
 /*     background-image : "/mywebsite/new-background.jpeg" ; */
 /*   } */
-body{
-  background-image: url('new-background.jpeg');
-}
-
 #firstpara{
     background-color: #d3d3bd;;
     height: 130px;
