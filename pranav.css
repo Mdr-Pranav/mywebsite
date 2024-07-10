@@ -6,7 +6,7 @@
     /* background-image: linear-gradient(270deg,#0f468e,#6ca2cc) ; */
 /*     background-image: linear-gradient(-90deg,#8360c3, #2e9dbf) ; */
     /* repeat : no-repeat; */ 
-    background : "new-background.jpeg" ;
+    background : "/mywebsite/new-background.jpeg" ;
   }
 
 
