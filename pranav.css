@@ -9,7 +9,7 @@
 /*     background-image : "/mywebsite/new-background.jpeg" ; */
 /*   } */
 body{
-  background-image: url('/mywebsite/new-background.jpeg');
+  background-image: url('new-background.jpeg');
 }
 
 #firstpara{
