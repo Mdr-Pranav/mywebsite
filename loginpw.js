@@ -1,34 +1,3 @@
-function checkPassword() {
-    // Get the entered password
-    var enteredPassword = document.getElementById("password").value;
-    var enteredId = document.getElementById("iden").value;
-
-    // Replace 'your_password' with the correct password
-    var correctPassword = "pa";
-    var correctiden = "cs362";
-    var correctiden1="Cs362";
-    var correctiden2="CS362";
-    
-
-    if (enteredId===correctiden & enteredPassword === correctPassword ) {
-    //   if (enteredPassword === correctPassword) {}
-        return true;
-    } 
-    if (enteredId===correctiden1 & enteredPassword === correctPassword ) {
-    //   if (enteredPassword === correctPassword) {}
-        return true;
-    } 
-    if (enteredId===correctiden2 & enteredPassword === correctPassword ) {
-    //   if (enteredPassword === correctPassword) {}
-        return true;
-    } 
-else {
-        alert("Please try again.");
-        // Prevent form submission if the password is incorrect
-        return false;
-    }
-}
-
 function calculateAttendance() {
     var attendedClasses = parseFloat(document.getElementById('attendedClasses').value);
     var totalClasses = parseFloat(document.getElementById('totalClasses').value);
