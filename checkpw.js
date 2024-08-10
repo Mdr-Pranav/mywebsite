@@ -4,10 +4,8 @@ function checkPassword() {
     let enteredId = document.getElementById("iden").value;
 
     // Replace 'your_password' with the correct password
-    var correctPassword = "pa";
-    var correctiden = "cs362";
-    var correctiden1="Cs362";
-    var correctiden2="CS362";
+    const correctPassword = "pa";
+    const correctiden = "cs362";
     
 
     if (enteredId===correctiden & enteredPassword === correctPassword ) {
@@ -15,17 +13,7 @@ function checkPassword() {
         // return true;
         window.location.href = "pranav.html";
     } 
-    if (enteredId===correctiden1 & enteredPassword === correctPassword ) {
-    //   if (enteredPassword === correctPassword) {}
-        // return true;
-        window.location.href = "pranav.html";
-    } 
-    if (enteredId===correctiden2 & enteredPassword === correctPassword ) {
-    //   if (enteredPassword === correctPassword) {}
-        // return true;
-        window.location.href = "pranav.html";
-    } 
-else {
+    else {
         alert("Please try again.");
         // Prevent form submission if the password is incorrect
         return false;
