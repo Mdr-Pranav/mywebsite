@@ -15,7 +15,8 @@ function checkPassword() {
        }
     } 
     else {
-        alert("Please try again.");
+        alert("Please try again");
+        console.log("TRY AGAIN" );
         // Prevent form submission if the password is incorrect
         return false;
     }
