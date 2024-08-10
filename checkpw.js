@@ -12,15 +12,18 @@ function checkPassword() {
 
     if (enteredId===correctiden & enteredPassword === correctPassword ) {
     //   if (enteredPassword === correctPassword) {}
-        return true;
+        // return true;
+        window.location.href = "pranav.html";
     } 
     if (enteredId===correctiden1 & enteredPassword === correctPassword ) {
     //   if (enteredPassword === correctPassword) {}
-        return true;
+        // return true;
+        window.location.href = "pranav.html";
     } 
     if (enteredId===correctiden2 & enteredPassword === correctPassword ) {
     //   if (enteredPassword === correctPassword) {}
-        return true;
+        // return true;
+        window.location.href = "pranav.html";
     } 
 else {
         alert("Please try again.");
