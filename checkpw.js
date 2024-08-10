@@ -13,6 +13,12 @@ function checkPassword() {
         // return true;
         window.location.href = "https://mdr-pranav.github.io/mywebsite/pranav.html";
        }
+       else {
+        alert("Please try again");
+        console.log("TRY AGAIN" );
+        // Prevent form submission if the password is incorrect
+        return false;
+        }
     } 
     else {
         alert("Please try again");
