@@ -8,6 +8,28 @@
     /* repeat : no-repeat; 
 /*     background-image : "/mywebsite/new-background.jpeg" ; */
 /*   } */
+
+body{
+    background:linear-gradient(45deg,#A8DADC, #1D3557, #FF6B6B, #F1FAEE);
+    background-size:300% 300%;
+    animation:color 12s ease-in-out infinite;
+    height: 100vh;
+    width: 100%;
+
+}
+
+@keyframes color {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 #firstpara{
     background-color: #d3d3bd;;
     height: 130px;
