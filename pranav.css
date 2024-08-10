@@ -278,11 +278,11 @@ transition: all 0.3s;
 
  /*Socials animation*/
 @keyframes animations3 {
-    0% {bottom:0px}
-    25% {bottom:5px}
-    50% {bottom:10px}
-    75% {bottom:5px}
-    100% {bottom:0px}
+    0% {bottom:3px}
+    25% {bottom:8px}
+    50% {bottom:13px}
+    75% {bottom:8px}
+    100% {bottom:3px}
   }
 
 .sclani {
