@@ -8,10 +8,11 @@ function checkPassword() {
     const correctiden = "cs362";
     
 
-    if (enteredId===correctiden & enteredPassword === correctPassword ) {
-    //   if (enteredPassword === correctPassword) {}
+    if (enteredId===correctiden) {
+       if (enteredPassword === correctPassword) {
         // return true;
         window.location.href = "https://yourusername.github.io/mywebsite/pranav.html";
+       }
     } 
     else {
         alert("Please try again.");
