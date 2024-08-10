@@ -11,7 +11,7 @@ function checkPassword() {
     if (enteredId===correctiden & enteredPassword === correctPassword ) {
     //   if (enteredPassword === correctPassword) {}
         // return true;
-        window.location.href = "/mywebsite/pranav.html";
+        window.location.href = "https://yourusername.github.io/mywebsite/pranav.html";
     } 
     else {
         alert("Please try again.");
